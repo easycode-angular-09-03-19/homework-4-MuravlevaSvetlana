@@ -1,0 +1,11 @@
+<div class = "row justify-content-md-center">
+  <div class="card" [ngClass]="class" style="width: 80%; margin-top: 5%;">
+      <div class="card-body">
+          <h5 class="card-title">{{todoItem.title}}</h5>
+          <p class="card-text">{{todoItem.text}}</p>
+          <button class="btn btn-primary" type="submit" style="margin-right: 5%;" (click) = "delete()">Delete todo</button>
+          <button class="btn btn-primary" type="submit" (click) = "completeTodo()">Completed</button>
+      </div>
+  </div>
+</div>
+

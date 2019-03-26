@@ -1,0 +1,7 @@
+<div class = "container">
+    <app-add-todo-item (todoItem) = "addTodo($event)" ></app-add-todo-item>
+    <div class = "row justify-content-md-center">
+        <button class="btn btn-primary" (click)="completeAll()"> Complete all todos </button>
+    </div>
+    <app-todo-item [todoItem] = "todo" [todos] = "allTodos" [TodoItemComplete] = "todo.completed" *ngFor="let todo of allTodos" (deleteItem) = "deleteTodo($event)"></app-todo-item>
+</div>

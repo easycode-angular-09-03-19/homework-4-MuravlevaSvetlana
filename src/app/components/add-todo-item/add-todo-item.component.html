@@ -1,0 +1,15 @@
+<div class = "row justify-content-md-center" style="margin-top: 3%; margin-bottom: 3%;">
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1">Title</span>
+    </div>
+    <input type="text" class="form-control"  [(ngModel)]="todoTitle" aria-label="Title of the todo" aria-describedby="basic-addon1">
+  </div>
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1">Text</span>
+    </div>
+    <input type="text" class="form-control" [(ngModel)]="todoText" aria-label="Text of the todo" aria-describedby="basic-addon1">
+  </div>
+  <button class="btn btn-primary" (click)="addTodoItem()">Add Todo</button>
+</div>
